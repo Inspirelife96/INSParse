@@ -16,10 +16,10 @@
 @implementation INSParseQueryManager (Share)
 
 + (BOOL)addShareWithCategory:(NSNumber *)category
-                      Feed:(INSFeed *)feed
-                toPlatform:(NSString *)toPlatform
-                  fromUser:(PFUser *)fromUser
-                     error:(NSError **)error {
+                        Feed:(INSFeed *)feed
+                  toPlatform:(NSString *)toPlatform
+                    fromUser:(PFUser *)fromUser
+                       error:(NSError **)error {
     INSShare *share = [[INSShare alloc] init];
     share.category = category;
     share.feed = feed;
