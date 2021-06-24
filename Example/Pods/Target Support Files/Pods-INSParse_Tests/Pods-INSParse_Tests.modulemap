@@ -1,0 +1,6 @@
+framework module Pods_INSParse_Tests {
+  umbrella header "Pods-INSParse_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}
