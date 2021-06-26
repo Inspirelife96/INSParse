@@ -24,6 +24,19 @@ typedef NS_ENUM(NSInteger, INSParseActivityType) {
     INSParseActivityTypeBanFeed = 1002,
 };
 
+typedef NS_ENUM(NSInteger, INSParseReportType) {
+    INSParseReportTypeFeed = 0,
+    INSParseReportTypeComment = 1
+};
+
+typedef NS_ENUM(NSInteger, INSParseReportReason) {
+    INSParseReportReasonPornography = 0,
+    INSParseReportReasonIllegal = 1,
+    INSParseReportReasonIrrelated = 2,
+    INSParseReportReasonLost = 3,
+    INSParseReportReasonOthers = 4,
+};
+
 // 目前不支持转发/赞评论，暂时不要玩的太大。
 
 // PFObject 表自带下面四个字段，所以下面的所有其他表都自带这四个字段
@@ -139,5 +152,36 @@ extern NSString *const kActivityComment; // 相关的Comment
 extern NSString *const kActivityLike; // 相关的Like
 extern NSString *const kActivityShare; // 相关的Share
 extern NSString *const kActivityFollow; // 相关的Share
+
+
+# pragma mark - Report 表
+
+// Report表 向管理员举报有问题的Feed/Comment
+
+// Class key
+extern NSString *const kReportClassKey;
+
+// Field keys
+extern NSString *const kReportFromUser; // 举报者
+extern NSString *const kReportType; // 消息接受者
+extern NSString *const kReportReason; // 类型 0:Feed私有 1:Feed公开 2:Feed删除 100:评论 200：赞 300:分享 400:关注
+extern NSString *const kReportFeed; // 相关的Feed
+extern NSString *const kReportComment; // 相关的Comment
+
+
+
+# pragma mark - FollowInfo 表
+
+// FollowInfo表 User表创建followInfo字段和其关联，方便读取用户的关注/粉丝记录。
+// Follow表更新时，有Parse Cloud出发AfterSave，进行更新。
+
+// Class key
+extern NSString *const kFollowInfoClassKey;
+
+// Field keys
+extern NSString *const kFollowInfoFollowCount; // 关注
+extern NSString *const kFollowInfoFollowedCount; // 粉丝
+extern NSString *const kFollowInfoUser; // 用户
+
 
 

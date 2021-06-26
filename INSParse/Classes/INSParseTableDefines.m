@@ -120,3 +120,31 @@ NSString *const kActivityComment = @"comment";
 NSString *const kActivityLike = @"like";
 NSString *const kActivityShare = @"share";
 NSString *const kActivityFollow = @"follow";
+
+# pragma mark - Report 表
+
+// Report表 向管理员举报有问题的Feed/Comment
+
+// Class key
+NSString *const kReportClassKey = @"Report";
+
+// Field keys
+NSString *const kReportFromUser = @"fromUser";
+NSString *const kReportType = @"type";
+NSString *const kReportReason = @"reason";
+NSString *const kReportFeed = @"feed";
+NSString *const kReportComment = @"comment";
+
+
+# pragma mark - FollowInfo 表
+
+// FollowInfo表 User表创建followInfo字段和其关联，方便读取用户的关注/粉丝记录。
+// Follow表更新时，有Parse Cloud出发AfterSave，进行更新。
+
+// Class key
+NSString *const kFollowInfoClassKey = @"FollowInfo";
+
+// Field keys
+NSString *const kFollowInfoFollowCount = @"followCount";
+NSString *const kFollowInfoFollowedCount = @"followedCount";
+NSString *const kFollowInfoUser = @"user";
