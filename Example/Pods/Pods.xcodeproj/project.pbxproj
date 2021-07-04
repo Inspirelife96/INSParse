@@ -333,8 +333,6 @@
 		7F76CEC32683FA2F001030D3 /* INSParseQueryManager+Activity.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F76CEC12683FA2F001030D3 /* INSParseQueryManager+Activity.m */; };
 		7F76CEE626842640001030D3 /* INSActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F76CEE426842640001030D3 /* INSActivity.m */; };
 		7F76CEE726842640001030D3 /* INSActivity.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F76CEE526842640001030D3 /* INSActivity.h */; };
-		7FFD569A269154E4007EDAF9 /* UIImage+INS_Compress.h in Headers */ = {isa = PBXBuildFile; fileRef = 7FFD5698269154E4007EDAF9 /* UIImage+INS_Compress.h */; };
-		7FFD569B269154E4007EDAF9 /* UIImage+INS_Compress.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FFD5699269154E4007EDAF9 /* UIImage+INS_Compress.m */; };
 		8047553309D59B8B18419F800180B40A /* PFCommandRunning.h in Headers */ = {isa = PBXBuildFile; fileRef = 629F0EC06EC30555298363AD9902227B /* PFCommandRunning.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		81AD81122E5B0312E8A44C77734AABFC /* PFHash.m in Sources */ = {isa = PBXBuildFile; fileRef = 0557F39DB5B730886DD6CFA0FAA98277 /* PFHash.m */; };
 		81C5F0CFA7105643A6FB574DB68CA7F7 /* PFPinningEventuallyQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 64F6DCB7FF8D072F29E7E97C084E3AFE /* PFPinningEventuallyQueue.h */; settings = {ATTRIBUTES = (Private, ); }; };
@@ -1048,8 +1046,6 @@
 		7F76CEE426842640001030D3 /* INSActivity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = INSActivity.m; path = INSParse/Classes/INSActivity.m; sourceTree = "<group>"; };
 		7F76CEE526842640001030D3 /* INSActivity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = INSActivity.h; path = INSParse/Classes/INSActivity.h; sourceTree = "<group>"; };
 		7FE7B12124241C9ECD038A5996BAB36F /* PFFileController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PFFileController.m; path = Parse/Parse/Internal/File/Controller/PFFileController.m; sourceTree = "<group>"; };
-		7FFD5698269154E4007EDAF9 /* UIImage+INS_Compress.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "UIImage+INS_Compress.h"; path = "INSParse/Classes/UIImage+INS_Compress.h"; sourceTree = "<group>"; };
-		7FFD5699269154E4007EDAF9 /* UIImage+INS_Compress.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "UIImage+INS_Compress.m"; path = "INSParse/Classes/UIImage+INS_Compress.m"; sourceTree = "<group>"; };
 		80C10FD9DFF582A57BD7F6EA381B5072 /* FBSnapshotTestCase-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FBSnapshotTestCase-umbrella.h"; sourceTree = "<group>"; };
 		815DF760F708AF5D2E44DB8857C9026B /* PFPush.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PFPush.m; path = Parse/Parse/PFPush.m; sourceTree = "<group>"; };
 		8199F6890F836E92973110F7BFFA3CDD /* ExpectaObject+FBSnapshotTest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ExpectaObject+FBSnapshotTest.h"; sourceTree = "<group>"; };
@@ -1594,8 +1590,6 @@
 				7F36ACCE26848DBA00DD41EA /* INSReport.m */,
 				7F36ACDB2686C82A00DD41EA /* INSFollowInfo.h */,
 				7F36ACDC2686C82A00DD41EA /* INSFollowInfo.m */,
-				7FFD5698269154E4007EDAF9 /* UIImage+INS_Compress.h */,
-				7FFD5699269154E4007EDAF9 /* UIImage+INS_Compress.m */,
 				B4FA9C88F734337AB305CB13066C557E /* Pod */,
 				BB19B7ABB23DAA7BEB94A7C7CD29F199 /* Support Files */,
 			);
@@ -2665,7 +2659,6 @@
 				7F76CE722683F9C1001030D3 /* INSParseQueryManager+Comment.h in Headers */,
 				7F76CE3E2681F0E1001030D3 /* INSShare.h in Headers */,
 				7F76CDB22681A5C4001030D3 /* INSParseTableDefines.h in Headers */,
-				7FFD569A269154E4007EDAF9 /* UIImage+INS_Compress.h in Headers */,
 				7F76CE982683FA02001030D3 /* INSParseQueryManager+Like.h in Headers */,
 				7F76CEA62683FA11001030D3 /* INSParseQueryManager+Share.h in Headers */,
 			);
@@ -3326,7 +3319,6 @@
 			files = (
 				7F76CE192681F0B0001030D3 /* INSComment.m in Sources */,
 				7F76CEE626842640001030D3 /* INSActivity.m in Sources */,
-				7FFD569B269154E4007EDAF9 /* UIImage+INS_Compress.m in Sources */,
 				655A0373677543A9FF462F0EE26CA579 /* INSParse-dummy.m in Sources */,
 				7F76CEB52683FA22001030D3 /* INSParseQueryManager+Follow.m in Sources */,
 				7F36ACD026848DBB00DD41EA /* INSReport.m in Sources */,
