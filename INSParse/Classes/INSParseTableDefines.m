@@ -46,7 +46,7 @@ NSString *const kFeedLikeCount = @"likeCount";
 NSString *const kFeedShareCount = @"shareCount";
 
 // 辅助
-NSString *const kFeedTags; // 标签 （NSArray）
+NSString *const kFeedTags = @"tags";
 
 // 扩展 可自行定义
 NSString *const kFeedExtend1 = @"extend1";

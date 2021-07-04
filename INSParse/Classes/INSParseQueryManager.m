@@ -9,6 +9,13 @@
 
 @implementation INSParseQueryManager
 
++ (PFFileObject *)addImageData:(NSData *)imageData error:(NSError **)error {
+    PFFileObject *fileObject = [PFFileObject fileObjectWithName:@"image.jpg" data:imageData];
+    [fileObject save:error];
+    
+    return fileObject;
+}
+
 @end
 
 
