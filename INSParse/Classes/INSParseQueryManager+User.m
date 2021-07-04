@@ -101,7 +101,7 @@
     BOOL succeed =  [INSParseQueryManager _addFollowInfoForUser:user error:error];
     
     if (succeed) {
-        [INSParseQueryManager _linkInstallationWithUser:user error:error];
+        succeed = [INSParseQueryManager _linkInstallationWithUser:user error:error];
     }
     
     if (succeed) {
@@ -145,7 +145,7 @@
     
     NSArray *sessionArray = [querySession findObjects:error];
     
-    if (error) {
+    if (*error) {
         return NO;
     } else {
         for (NSInteger i = 0; i < sessionArray.count; i++) {

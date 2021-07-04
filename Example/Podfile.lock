@@ -10,7 +10,7 @@ PODS:
   - FBSnapshotTestCase/Core (2.1.4)
   - FBSnapshotTestCase/SwiftSupport (2.1.4):
     - FBSnapshotTestCase/Core
-  - INSParse (0.1.0):
+  - INSParse (0.1.4):
     - Parse
   - Parse (1.19.2):
     - Parse/Core (= 1.19.2)
@@ -43,7 +43,7 @@ SPEC CHECKSUMS:
   Expecta: 3b6bd90a64b9a1dcb0b70aa0e10a7f8f631667d5
   "Expecta+Snapshots": dcff217eef506dabd6dfdc7864ea2da321fafbb8
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
-  INSParse: f09b0d42a1d02875078ae89365220c3d5fc84833
+  INSParse: 66993799e81178ac4e439ac4e9027967a232b8d8
   Parse: 081fb8755c3000fd11df817eec235def233d0af3
   Specta: 3e1bd89c3517421982dc4d1c992503e48bd5fe66
 

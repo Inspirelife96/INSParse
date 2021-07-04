@@ -1,9 +1,9 @@
 {
   "name": "INSParse",
-  "version": "0.1.0",
+  "version": "0.1.4",
   "summary": "A short description of INSParse.",
   "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/inspirelife@hotmail.com/INSParse",
+  "homepage": "https://github.com/Inspirelife96/INSParse",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -12,8 +12,8 @@
     "inspirelife@hotmail.com": "inspirelife@hotmail.com"
   },
   "source": {
-    "git": "https://github.com/inspirelife@hotmail.com/INSParse.git",
-    "tag": "0.1.0"
+    "git": "https://github.com/Inspirelife96/INSParse.git",
+    "tag": "0.1.4"
   },
   "platforms": {
     "ios": "9.0"
