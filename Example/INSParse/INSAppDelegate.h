@@ -6,7 +6,11 @@
 //  Copyright (c) 2021 inspirelife@hotmail.com. All rights reserved.
 //
 
+#import <INSParse-umbrella.h>
+
 @import UIKit;
+
+
 
 @interface INSAppDelegate : UIResponder <UIApplicationDelegate>
 

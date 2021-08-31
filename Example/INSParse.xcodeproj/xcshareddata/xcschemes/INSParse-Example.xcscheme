@@ -47,6 +47,16 @@
                ReferencedContainer = "container:INSParse.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "7FD1D64626DCE57500366841"
+               BuildableName = "INSParse_ExampleTests.xctest"
+               BlueprintName = "INSParse_ExampleTests"
+               ReferencedContainer = "container:INSParse.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction

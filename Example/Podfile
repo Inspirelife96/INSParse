@@ -14,3 +14,7 @@ target 'INSParse_Example' do
     pod 'Expecta+Snapshots'
   end
 end
+
+target 'INSParse_ExampleTests' do
+  pod 'INSParse', :path => '../'
+end

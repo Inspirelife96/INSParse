@@ -8,6 +8,8 @@
 
 #import "INSAppDelegate.h"
 
+#import <INSParse-umbrella.h>
+
 @implementation INSAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions

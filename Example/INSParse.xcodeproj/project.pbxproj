@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		06BE3DA6BC2C976792520157 /* Pods_INSParse_ExampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 193F28FD794F04CF7606713B /* Pods_INSParse_ExampleTests.framework */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -22,6 +23,7 @@
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		6F43CB0752CA4580CD86742C /* Pods_INSParse_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AC7BEBB7310152ED972665E /* Pods_INSParse_Tests.framework */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
+		7FD1D64A26DCE57600366841 /* INSParse_ExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FD1D64926DCE57600366841 /* INSParse_ExampleTests.m */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		96A14F5B62B484EF0E27446F /* Pods_INSParse_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35BEB96FA60EC79782269F32 /* Pods_INSParse_Example.framework */; };
 /* End PBXBuildFile section */
@@ -34,10 +36,19 @@
 			remoteGlobalIDString = 6003F589195388D20070C39A;
 			remoteInfo = INSParse;
 		};
+		7FD1D64C26DCE57600366841 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6003F582195388D10070C39A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6003F589195388D20070C39A;
+			remoteInfo = INSParse_Example;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		03ED8F328E03D1D667F322F9 /* Pods-INSParse_ExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-INSParse_ExampleTests.release.xcconfig"; path = "Target Support Files/Pods-INSParse_ExampleTests/Pods-INSParse_ExampleTests.release.xcconfig"; sourceTree = "<group>"; };
 		0AC7BEBB7310152ED972665E /* Pods_INSParse_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_INSParse_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		193F28FD794F04CF7606713B /* Pods_INSParse_ExampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_INSParse_ExampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		26497A1E2F3905F0B86FCD15 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		2C28BCBF1E83C11098A1973D /* Pods-INSParse_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-INSParse_Tests.debug.xcconfig"; path = "Target Support Files/Pods-INSParse_Tests/Pods-INSParse_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		35BEB96FA60EC79782269F32 /* Pods_INSParse_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_INSParse_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -61,7 +72,11 @@
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7FD1D64726DCE57500366841 /* INSParse_ExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = INSParse_ExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7FD1D64926DCE57600366841 /* INSParse_ExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = INSParse_ExampleTests.m; sourceTree = "<group>"; };
+		7FD1D64B26DCE57600366841 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8EC27FA4C61220EB9B960E8E /* Pods-INSParse_ExampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-INSParse_ExampleTests.debug.xcconfig"; path = "Target Support Files/Pods-INSParse_ExampleTests/Pods-INSParse_ExampleTests.debug.xcconfig"; sourceTree = "<group>"; };
 		98AC40E9752B9F919BE3A1A1 /* INSParse.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = INSParse.podspec; path = ../INSParse.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		BCF4E4E74E136EFE7F93AE4D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		C0AC0FF0B1580714DCCD668F /* Pods-INSParse_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-INSParse_Tests.release.xcconfig"; path = "Target Support Files/Pods-INSParse_Tests/Pods-INSParse_Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -92,6 +107,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7FD1D64426DCE57500366841 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06BE3DA6BC2C976792520157 /* Pods_INSParse_ExampleTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -102,6 +125,8 @@
 				E7F7FD50F390A707514BF4C0 /* Pods-INSParse_Example.release.xcconfig */,
 				2C28BCBF1E83C11098A1973D /* Pods-INSParse_Tests.debug.xcconfig */,
 				C0AC0FF0B1580714DCCD668F /* Pods-INSParse_Tests.release.xcconfig */,
+				8EC27FA4C61220EB9B960E8E /* Pods-INSParse_ExampleTests.debug.xcconfig */,
+				03ED8F328E03D1D667F322F9 /* Pods-INSParse_ExampleTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -112,6 +137,7 @@
 				60FF7A9C1954A5C5007DD14C /* Podspec Metadata */,
 				6003F593195388D20070C39A /* Example for INSParse */,
 				6003F5B5195388D20070C39A /* Tests */,
+				7FD1D64826DCE57600366841 /* INSParse_ExampleTests */,
 				6003F58C195388D20070C39A /* Frameworks */,
 				6003F58B195388D20070C39A /* Products */,
 				4FFC6032986B747128075EE1 /* Pods */,
@@ -123,6 +149,7 @@
 			children = (
 				6003F58A195388D20070C39A /* INSParse_Example.app */,
 				6003F5AE195388D20070C39A /* INSParse_Tests.xctest */,
+				7FD1D64726DCE57500366841 /* INSParse_ExampleTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -136,6 +163,7 @@
 				6003F5AF195388D20070C39A /* XCTest.framework */,
 				35BEB96FA60EC79782269F32 /* Pods_INSParse_Example.framework */,
 				0AC7BEBB7310152ED972665E /* Pods_INSParse_Tests.framework */,
+				193F28FD794F04CF7606713B /* Pods_INSParse_ExampleTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -196,6 +224,15 @@
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
+		7FD1D64826DCE57600366841 /* INSParse_ExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				7FD1D64926DCE57600366841 /* INSParse_ExampleTests.m */,
+				7FD1D64B26DCE57600366841 /* Info.plist */,
+			);
+			path = INSParse_ExampleTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -238,6 +275,26 @@
 			productReference = 6003F5AE195388D20070C39A /* INSParse_Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		7FD1D64626DCE57500366841 /* INSParse_ExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7FD1D65026DCE57600366841 /* Build configuration list for PBXNativeTarget "INSParse_ExampleTests" */;
+			buildPhases = (
+				A565268EA8C0F4137BAB73FC /* [CP] Check Pods Manifest.lock */,
+				7FD1D64326DCE57500366841 /* Sources */,
+				7FD1D64426DCE57500366841 /* Frameworks */,
+				7FD1D64526DCE57500366841 /* Resources */,
+				92606A0AF1CA3EF1DF69B9CB /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7FD1D64D26DCE57600366841 /* PBXTargetDependency */,
+			);
+			name = INSParse_ExampleTests;
+			productName = INSParse_ExampleTests;
+			productReference = 7FD1D64726DCE57500366841 /* INSParse_ExampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -248,7 +305,18 @@
 				LastUpgradeCheck = 1240;
 				ORGANIZATIONNAME = "inspirelife@hotmail.com";
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = 86MNLPUJYP;
+						ProvisioningStyle = Automatic;
+					};
 					6003F5AD195388D20070C39A = {
+						DevelopmentTeam = 86MNLPUJYP;
+						TestTargetID = 6003F589195388D20070C39A;
+					};
+					7FD1D64626DCE57500366841 = {
+						CreatedOnToolsVersion = 12.4;
+						DevelopmentTeam = 86MNLPUJYP;
+						ProvisioningStyle = Automatic;
 						TestTargetID = 6003F589195388D20070C39A;
 					};
 				};
@@ -269,6 +337,7 @@
 			targets = (
 				6003F589195388D20070C39A /* INSParse_Example */,
 				6003F5AD195388D20070C39A /* INSParse_Tests */,
+				7FD1D64626DCE57500366841 /* INSParse_ExampleTests */,
 			);
 		};
 /* End PBXProject section */
@@ -290,6 +359,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7FD1D64526DCE57500366841 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,6 +440,50 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		92606A0AF1CA3EF1DF69B9CB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-INSParse_ExampleTests/Pods-INSParse_ExampleTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/INSParse/INSParse.framework",
+				"${BUILT_PRODUCTS_DIR}/Parse/Parse.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/INSParse.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Parse.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-INSParse_ExampleTests/Pods-INSParse_ExampleTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A565268EA8C0F4137BAB73FC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-INSParse_ExampleTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		D50034BC35C0AD8AA652E831 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -407,6 +527,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7FD1D64326DCE57500366841 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FD1D64A26DCE57600366841 /* INSParse_ExampleTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -414,6 +542,11 @@
 			isa = PBXTargetDependency;
 			target = 6003F589195388D20070C39A /* INSParse_Example */;
 			targetProxy = 6003F5B3195388D20070C39A /* PBXContainerItemProxy */;
+		};
+		7FD1D64D26DCE57600366841 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6003F589195388D20070C39A /* INSParse_Example */;
+			targetProxy = 7FD1D64C26DCE57600366841 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -553,12 +686,16 @@
 			baseConfigurationReference = D4B18EBE734EF4F8CC92EDB3 /* Pods-INSParse_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 86MNLPUJYP;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "INSParse/INSParse-Prefix.pch";
 				INFOPLIST_FILE = "INSParse/INSParse-Info.plist";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.inspirelife.INSParse-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				WRAPPER_EXTENSION = app;
 			};
@@ -569,12 +706,16 @@
 			baseConfigurationReference = E7F7FD50F390A707514BF4C0 /* Pods-INSParse_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 86MNLPUJYP;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "INSParse/INSParse-Prefix.pch";
 				INFOPLIST_FILE = "INSParse/INSParse-Info.plist";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.inspirelife.INSParse-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				WRAPPER_EXTENSION = app;
 			};
@@ -585,6 +726,7 @@
 			baseConfigurationReference = 2C28BCBF1E83C11098A1973D /* Pods-INSParse_Tests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 86MNLPUJYP;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -610,6 +752,7 @@
 			baseConfigurationReference = C0AC0FF0B1580714DCCD668F /* Pods-INSParse_Tests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 86MNLPUJYP;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -623,6 +766,61 @@
 				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/INSParse_Example.app/INSParse_Example";
 				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+		7FD1D64E26DCE57600366841 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8EC27FA4C61220EB9B960E8E /* Pods-INSParse_ExampleTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 86MNLPUJYP;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = INSParse_ExampleTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.inspirelife.INSParse-ExampleTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/INSParse_Example.app/INSParse_Example";
+			};
+			name = Debug;
+		};
+		7FD1D64F26DCE57600366841 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 03ED8F328E03D1D667F322F9 /* Pods-INSParse_ExampleTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 86MNLPUJYP;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = INSParse_ExampleTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.inspirelife.INSParse-ExampleTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/INSParse_Example.app/INSParse_Example";
 			};
 			name = Release;
 		};
@@ -652,6 +850,15 @@
 			buildConfigurations = (
 				6003F5C3195388D20070C39A /* Debug */,
 				6003F5C4195388D20070C39A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7FD1D65026DCE57600366841 /* Build configuration list for PBXNativeTarget "INSParse_ExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7FD1D64E26DCE57600366841 /* Debug */,
+				7FD1D64F26DCE57600366841 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
