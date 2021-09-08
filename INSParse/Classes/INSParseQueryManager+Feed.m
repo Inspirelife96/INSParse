@@ -153,12 +153,12 @@
             mediaContents:(NSArray<PFFileObject *> *)mediaContents
                  fromUser:(PFUser *)fromUser
                isOriginal:(BOOL)isOriginal
-              forwardFrom:(NSString *)forwardFrom
+              forwardFrom:(INSFeed *__nullable)forwardFrom
              commentCount:(NSNumber *)commentCount
                 likeCount:(NSNumber *)likeCount
                shareCount:(NSNumber *)shareCount
                      tags:(NSArray<NSString *> *)tags
-                  article:(INSArticle *)article
+                  article:(INSArticle *__nullable)article
                     error:(NSError **)error
 {
     INSFeed *feed = [[INSFeed alloc] init];
@@ -169,12 +169,19 @@
     feed.mediaContents = mediaContents;
     feed.fromUser = fromUser;
     feed.isOriginal = isOriginal;
-    feed.forwardFrom = forwardFrom;
+    
+    if (forwardFrom != nil) {
+        feed.forwardFrom = forwardFrom;
+    }
+    
     feed.commentCount = commentCount;
     feed.likeCount = likeCount;
     feed.shareCount = shareCount;
     feed.tags = tags;
-    feed.article = article;
+
+    if (article != nil) {
+        feed.article = article;
+    }
     
     BOOL succeeded = [feed save:error];
     

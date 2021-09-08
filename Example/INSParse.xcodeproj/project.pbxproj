@@ -24,6 +24,7 @@
 		6F43CB0752CA4580CD86742C /* Pods_INSParse_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AC7BEBB7310152ED972665E /* Pods_INSParse_Tests.framework */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		7FD1D64A26DCE57600366841 /* INSParse_ExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FD1D64926DCE57600366841 /* INSParse_ExampleTests.m */; };
+		7FECD9F426E4820A00911A68 /* INSTransferLearnPaintData.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FECD9F326E4820900911A68 /* INSTransferLearnPaintData.m */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		96A14F5B62B484EF0E27446F /* Pods_INSParse_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35BEB96FA60EC79782269F32 /* Pods_INSParse_Example.framework */; };
 /* End PBXBuildFile section */
@@ -75,6 +76,7 @@
 		7FD1D64726DCE57500366841 /* INSParse_ExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = INSParse_ExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FD1D64926DCE57600366841 /* INSParse_ExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = INSParse_ExampleTests.m; sourceTree = "<group>"; };
 		7FD1D64B26DCE57600366841 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7FECD9F326E4820900911A68 /* INSTransferLearnPaintData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = INSTransferLearnPaintData.m; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8EC27FA4C61220EB9B960E8E /* Pods-INSParse_ExampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-INSParse_ExampleTests.debug.xcconfig"; path = "Target Support Files/Pods-INSParse_ExampleTests/Pods-INSParse_ExampleTests.debug.xcconfig"; sourceTree = "<group>"; };
 		98AC40E9752B9F919BE3A1A1 /* INSParse.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = INSParse.podspec; path = ../INSParse.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
@@ -228,6 +230,7 @@
 			isa = PBXGroup;
 			children = (
 				7FD1D64926DCE57600366841 /* INSParse_ExampleTests.m */,
+				7FECD9F326E4820900911A68 /* INSTransferLearnPaintData.m */,
 				7FD1D64B26DCE57600366841 /* Info.plist */,
 			);
 			path = INSParse_ExampleTests;
@@ -532,6 +535,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7FD1D64A26DCE57600366841 /* INSParse_ExampleTests.m in Sources */,
+				7FECD9F426E4820A00911A68 /* INSTransferLearnPaintData.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

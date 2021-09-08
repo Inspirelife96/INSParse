@@ -124,12 +124,12 @@ NS_ASSUME_NONNULL_BEGIN
             mediaContents:(NSArray<PFFileObject *> *)mediaContents
                  fromUser:(PFUser *)fromUser
                isOriginal:(BOOL)isOriginal
-              forwardFrom:(INSFeed *)forwardFrom
+              forwardFrom:(INSFeed *__nullable)forwardFrom
              commentCount:(NSNumber *)commentCount
                 likeCount:(NSNumber *)likeCount
                shareCount:(NSNumber *)shareCount
                      tags:(NSArray<NSString *> *)tags
-                  article:(INSArticle *)article
+                  article:(INSArticle *__nullable)article
                     error:(NSError **)error;
 
 // Feed表更新

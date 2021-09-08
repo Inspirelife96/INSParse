@@ -12,6 +12,7 @@
 
 #import "INSActivity.h"
 #import "INSArticle.h"
+#import "INSBlock.h"
 #import "INSComment.h"
 #import "INSFeed.h"
 #import "INSFollow.h"
@@ -29,7 +30,6 @@
 #import "INSParseTableDefines.h"
 #import "INSReport.h"
 #import "INSShare.h"
-#import "PFQuery+Feed.h"
 
 FOUNDATION_EXPORT double INSParseVersionNumber;
 FOUNDATION_EXPORT const unsigned char INSParseVersionString[];
