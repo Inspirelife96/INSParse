@@ -155,15 +155,18 @@ NSString *const kReportFeed = @"feed";
 NSString *const kReportComment = @"comment";
 
 
-# pragma mark - FollowInfo 表
+# pragma mark - StatisticsInfo 表
 
-// FollowInfo表 User表创建followInfo字段和其关联，方便读取用户的关注/粉丝记录。
-// Follow表更新时，有Parse Cloud出发AfterSave，进行更新。
+// StatisticsInfo表 User表创建StatisticsInfo字段和其关联，方便读取用户的关注/粉丝/Feed数/获得的赞等统计记录记录。
+
+// 目前比较有意义的就是上述的四个统计，需要其他的可以进行扩展
 
 // Class key
-NSString *const kFollowInfoClassKey = @"FollowInfo";
+NSString *const kStatisticsInfoClassKey = @"StatisticsInfo";
 
 // Field keys
-NSString *const kFollowInfoFollowCount = @"followCount";
-NSString *const kFollowInfoFollowedCount = @"followedCount";
-NSString *const kFollowInfoUser = @"user";
+NSString *const kStatisticsInfoUser = @"user";
+NSString *const kStatisticsInfoFollowCount = @"followCount";
+NSString *const kStatisticsInfoFollowedCount = @"followedCount";
+NSString *const kStatisticsInfoFeedCount = @"feedCount";
+NSString *const kStatisticsInfoLikedCount = @"likedCount";

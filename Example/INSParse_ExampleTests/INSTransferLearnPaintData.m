@@ -90,11 +90,11 @@
 //    block.toUser = [PFUser currentUser];
 //    [block save];
 //    
-//    INSFollowInfo *followInfo = [[INSFollowInfo alloc] init];
-//    followInfo.followCount = @(0);
-//    followInfo.followedCount = @(0);
+//    INSStatisticsInfo *StatisticsInfo = [[INSStatisticsInfo alloc] init];
+//    StatisticsInfo.followCount = @(0);
+//    StatisticsInfo.followedCount = @(0);
 //    
-//    [followInfo save];
+//    [StatisticsInfo save];
 }
 
 - (void)testTransferPhoto {

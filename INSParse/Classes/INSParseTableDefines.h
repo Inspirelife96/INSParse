@@ -196,15 +196,18 @@ extern NSString *const kReportComment; // 相关的Comment
 
 
 
-# pragma mark - FollowInfo 表
+# pragma mark - StatisticsInfo 表
 
-// FollowInfo表 User表创建followInfo字段和其关联，方便读取用户的关注/粉丝记录。
-// Follow表更新时，有Parse Cloud出发AfterSave，进行更新。
+// StatisticsInfo表 User表创建StatisticsInfo字段和其关联，方便读取用户的关注/粉丝/Feed数/获得的赞等统计记录记录。
+
+// 目前比较有意义的就是上述的四个统计，需要其他的可以进行扩展
 
 // Class key
-extern NSString *const kFollowInfoClassKey;
+extern NSString *const kStatisticsInfoClassKey;
 
 // Field keys
-extern NSString *const kFollowInfoFollowCount; // 关注
-extern NSString *const kFollowInfoFollowedCount; // 粉丝
-extern NSString *const kFollowInfoUser; // 用户
+extern NSString *const kStatisticsInfoUser; // 用户
+extern NSString *const kStatisticsInfoFollowCount; // 关注
+extern NSString *const kStatisticsInfoFollowedCount; // 粉丝
+extern NSString *const kStatisticsInfoFeedCount; // Feed数
+extern NSString *const kStatisticsInfoLikedCount; // 获赞数

@@ -1,22 +1,24 @@
 //
-//  INSFollowInfo.m
+//  INSStatisticsInfo.m
 //  INSParse
 //
 //  Created by XueFeng Chen on 2021/6/26.
 //
 
-#import "INSFollowInfo.h"
+#import "INSStatisticsInfo.h"
 
 #import "INSParseTableDefines.h"
 
-@implementation INSFollowInfo
+@implementation INSStatisticsInfo
 
+@dynamic user;
 @dynamic followCount;
 @dynamic followedCount;
-@dynamic user;
+@dynamic feedCount;
+@dynamic likedCount;
 
 + (NSString *)parseClassName {
-    return kFollowInfoClassKey;
+    return kStatisticsInfoClassKey;
 }
 
 @end

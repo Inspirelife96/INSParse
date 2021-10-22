@@ -16,7 +16,7 @@
 #import "INSComment.h"
 #import "INSFeed.h"
 #import "INSFollow.h"
-#import "INSFollowInfo.h"
+#import "INSStatisticsInfo.h"
 #import "INSLike.h"
 #import "INSParseQueryManager+Activity.h"
 #import "INSParseQueryManager+Comment.h"

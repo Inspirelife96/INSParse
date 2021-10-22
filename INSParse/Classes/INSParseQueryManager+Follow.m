@@ -15,6 +15,44 @@
 
 @implementation INSParseQueryManager (Follow)
 
++ (NSArray<PFUser *> *)queryFollowFromUser:(PFUser *)fromUser
+                                    toUser:(PFUser *)toUser
+                                      page:(NSInteger)page
+                                 pageCount:(NSInteger)pageCount
+                                     error:(NSError **)error {
+    PFQuery *query = [PFQuery queryWithClassName:kFollowClassKey];
+    
+    if (fromUser) {
+        [query whereKey:kFollowFromUser equalTo:fromUser];
+    }
+    
+    if (toUser) {
+        [query whereKey:kFollowToUser equalTo:toUser];
+    }
+    
+    [query includeKey:kFollowToUser];
+
+    [query setSkip:pageCount * page];
+    [query setLimit:pageCount];
+
+    [query orderByDescending:@"createdAt"];
+
+    NSArray *followArray = [query findObjects:error];
+    
+    if (*error) {
+        return @[];
+    } else {
+        NSMutableArray *userMutableArray = [[NSMutableArray alloc] init];
+        
+        [followArray enumerateObjectsUsingBlock:^(INSFollow *  _Nonnull follow, NSUInteger idx, BOOL * _Nonnull stop) {
+            PFUser *user = follow.toUser;
+            [userMutableArray addObject:user];
+        }];
+        
+        return [userMutableArray copy];
+    }
+}
+
 + (BOOL)isFollowFromUser:(PFUser *)fromUser toUser:(PFUser *)toUser error:(NSError **)error {
     NSArray *followArray = [INSParseQueryManager _findFollowFromUser:fromUser toUser:toUser error:error];
     

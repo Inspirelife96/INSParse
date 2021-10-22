@@ -7,7 +7,7 @@
 
 #import "INSParseQueryManager+User.h"
 
-#import "INSFollowInfo.h"
+#import "INSStatisticsInfo.h"
 
 @implementation INSParseQueryManager (User)
 
@@ -93,7 +93,7 @@
 #pragma mark Private Methods
 
 + (BOOL)_configUserAfterLogin:(PFUser *)user error:(NSError **)error {
-    BOOL succeed =  [INSParseQueryManager _fetchFollowInfoForUser:user error:error];
+    BOOL succeed =  [INSParseQueryManager _fetchStatisticsInfoForUser:user error:error];
     
     if (succeed) {
         succeed = [INSParseQueryManager _linkPushWithUser:user error:error];
@@ -110,7 +110,7 @@
     BOOL succeed = [INSParseQueryManager _activeUser:user error:error];
     
     if (succeed) {
-        succeed = [INSParseQueryManager _createFollowInfoForUser:user error:error];
+        succeed = [INSParseQueryManager _createStatisticsInfoForUser:user error:error];
     }
     
     if (succeed) {
@@ -138,27 +138,29 @@
     return [user save:error];
 }
 
-+ (BOOL)_createFollowInfoForUser:(PFUser *)user error:(NSError **)error {
-    INSFollowInfo *followInfo = [[INSFollowInfo alloc] init];
-    followInfo.user = user;
-    followInfo.followCount = @(0);
-    followInfo.followedCount = @(0);
-    BOOL succeeded = [followInfo save:error];
++ (BOOL)_createStatisticsInfoForUser:(PFUser *)user error:(NSError **)error {
+    INSStatisticsInfo *statisticsInfo = [[INSStatisticsInfo alloc] init];
+    statisticsInfo.user = user;
+    statisticsInfo.followCount = @(0);
+    statisticsInfo.followedCount = @(0);
+    statisticsInfo.feedCount = @(0);
+    statisticsInfo.likedCount = @(0);
+    BOOL succeeded = [statisticsInfo save:error];
     
     if (succeeded) {
-        [user setObject:followInfo forKey:@"followInfo"];
+        [user setObject:statisticsInfo forKey:@"statisticsInfo"];
         return [user save:error];
     } else {
         return NO;
     }
 }
 
-+ (BOOL)_fetchFollowInfoForUser:(PFUser *)user error:(NSError **)error {
-    INSFollowInfo *followInfo = [user objectForKey:@"followInfo"];
-    if (followInfo) {
-        return [followInfo fetchIfNeeded:error];
++ (BOOL)_fetchStatisticsInfoForUser:(PFUser *)user error:(NSError **)error {
+    INSStatisticsInfo *statisticsInfo = [user objectForKey:@"statisticsInfo"];
+    if (statisticsInfo) {
+        return [statisticsInfo fetchIfNeeded:error];
     } else {
-        return [INSParseQueryManager _createFollowInfoForUser:user error:error];
+        return [INSParseQueryManager _createStatisticsInfoForUser:user error:error];
     }
 }
 
