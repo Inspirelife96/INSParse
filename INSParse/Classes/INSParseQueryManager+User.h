@@ -25,6 +25,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (BFTask *)loginWithAppleAuthType:(NSString *)authType authData:(NSDictionary<NSString *, NSString *> *)authData username:(NSString *)userName email:(NSString *)email error:(NSError **)error;
 
++ (void)logInWithAnonymous:(NSError **)error;
+
 + (void)signUpWithUsername:(NSString *)userName password:(NSString *)password email:(NSString *)email error:(NSError **)error;
 
 + (void)logOut;

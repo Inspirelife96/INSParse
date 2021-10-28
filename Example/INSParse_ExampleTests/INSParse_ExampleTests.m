@@ -57,6 +57,18 @@
     NSAssert(error == nil, @"Sign Up Failed");
 }
 
+- (void)testAnonymousLogin {
+    if ([PFUser currentUser]) {
+        [PFUser logOut];
+    }
+    
+    NSError *error = nil;
+    
+    [INSParseQueryManager logInWithAnonymous:&error];
+    
+    NSAssert([PFUser currentUser], @"Anonymous Login Failed");
+}
+
 - (void)testPerformanceExample {
     // This is an example of a performance test case.
     [self measureBlock:^{

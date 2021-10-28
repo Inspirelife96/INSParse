@@ -9,6 +9,8 @@
 
 #import "INSStatisticsInfo.h"
 
+#import <Parse/Parse-umbrella.h>
+
 @implementation INSParseQueryManager (User)
 
 + (void)logInWithUsername:(NSString *)userName password:(NSString *)password error:(NSError **)error {
@@ -22,6 +24,33 @@
             [PFUser logOut];
         }
     }
+}
+
++ (void)logInWithAnonymous:(NSError **)error {
+    __block NSError *loginError = nil;
+    [[[PFAnonymousUtils logInInBackground] continueWithBlock:^id _Nullable(BFTask<PFUser *> * _Nonnull task) {
+        loginError = task.error;
+        if (!task.isCancelled && !task.error) {
+            PFUser *user = task.result;
+            
+            if (user) {
+                BOOL succeeded = NO;
+                if (user.isNew) {
+                    succeeded = [INSParseQueryManager _configUserAfterSignUp:user error:&loginError];
+                } else {
+                    succeeded = [INSParseQueryManager _configUserAfterLogin:user error:&loginError];
+                }
+                
+                if (!succeeded) {
+                    [PFUser logOut];
+                }
+            }
+        }
+        
+        return task;
+    }] waitUntilFinished];
+    
+    *error = loginError;
 }
 
 + (void)signUpWithUsername:(NSString *)userName password:(NSString *)password email:(NSString *)email error:(NSError **)error {
