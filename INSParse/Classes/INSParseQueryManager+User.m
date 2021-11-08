@@ -53,6 +53,16 @@
     *error = loginError;
 }
 
++ (void)upgradeAnonymousUser:(PFUser *)user withUsername:(NSString *)userName password:(NSString *)password email:(NSString *)email error:(NSError **)error {
+    user.username = userName;
+    user.password = password;
+    user.email = email;
+    
+    [user signUp:error];
+    
+    return;
+}
+
 + (void)signUpWithUsername:(NSString *)userName password:(NSString *)password email:(NSString *)email error:(NSError **)error {
     PFUser *user = [PFUser user];
     user.username = userName;
