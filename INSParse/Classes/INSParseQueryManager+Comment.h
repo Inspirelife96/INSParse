@@ -25,7 +25,6 @@ NS_ASSUME_NONNULL_BEGIN
 // Comment表增加
 + (BOOL)addCommentWithCategory:(NSNumber *)category
                         toFeed:(INSFeed *)toFeed
-                     toComment:(INSComment *)toComment
                        content:(NSString *)content
                       fromUser:(PFUser *)fromUser
                          error:(NSError **)error;

@@ -48,7 +48,6 @@
     INSComment *comment = [[INSComment alloc] init];
     comment.category = category;
     comment.toFeed = toFeed;
-    comment.toComment = toComment;
     comment.content = content;
     comment.fromUser = fromUser;
     

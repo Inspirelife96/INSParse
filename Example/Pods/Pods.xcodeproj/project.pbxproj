@@ -303,6 +303,10 @@
 		7F13C1DFE2D51A305E1CC5EDED3AA80C /* INSFeed.m in Sources */ = {isa = PBXBuildFile; fileRef = 3425B5370D0FC91A7B2FF03A1223CC0E /* INSFeed.m */; };
 		7F96C23A057BA02BDF801C38359FF792 /* PFPurchaseController.h in Headers */ = {isa = PBXBuildFile; fileRef = 28608A1A22351D93AE68E29246A2F5C1 /* PFPurchaseController.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		7FCAB77F36FA1FCBC2BC87C307961B98 /* PFCommandRunningConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 86287131B7129BC077C69819BE5B41C7 /* PFCommandRunningConstants.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		7FCDBE6B277A9228008030C6 /* INSReply.h in Headers */ = {isa = PBXBuildFile; fileRef = 7FCDBE69277A9228008030C6 /* INSReply.h */; };
+		7FCDBE6C277A9228008030C6 /* INSReply.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FCDBE6A277A9228008030C6 /* INSReply.m */; };
+		7FCDBE6F277A9789008030C6 /* INSParseQueryManager+Reply.h in Headers */ = {isa = PBXBuildFile; fileRef = 7FCDBE6D277A9789008030C6 /* INSParseQueryManager+Reply.h */; };
+		7FCDBE70277A9789008030C6 /* INSParseQueryManager+Reply.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FCDBE6E277A9789008030C6 /* INSParseQueryManager+Reply.m */; };
 		813AB8F03DA740526D0F145C32659833 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D0F20F44EEB65C09DBF6AD00B9FE549 /* QuartzCore.framework */; };
 		82473F49A6B0F3CDFD3F1A04F102BD29 /* PFKeychainStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EC821C5E96D174D42A6AB185424E6EE /* PFKeychainStore.m */; };
 		8308F62032E311D3373207000DE1A8DA /* ParseClientConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = 084FD5D5D8578EE692C78F0691EEF99D /* ParseClientConfiguration.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -1071,6 +1075,10 @@
 		7EC68FBB88F394B613022E8F5FC89303 /* PFNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PFNetworkActivityIndicatorManager.h; path = Parse/Parse/PFNetworkActivityIndicatorManager.h; sourceTree = "<group>"; };
 		7ECC32323CDFB99EA1AB942896FCA985 /* Specta.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Specta.debug.xcconfig; sourceTree = "<group>"; };
 		7F603E4597AA00E0A82CF8A46A78CA83 /* INSShare.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = INSShare.h; path = INSParse/Classes/INSShare.h; sourceTree = "<group>"; };
+		7FCDBE69277A9228008030C6 /* INSReply.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = INSReply.h; path = INSParse/Classes/INSReply.h; sourceTree = "<group>"; };
+		7FCDBE6A277A9228008030C6 /* INSReply.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = INSReply.m; path = INSParse/Classes/INSReply.m; sourceTree = "<group>"; };
+		7FCDBE6D277A9789008030C6 /* INSParseQueryManager+Reply.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "INSParseQueryManager+Reply.h"; path = "INSParse/Classes/INSParseQueryManager+Reply.h"; sourceTree = "<group>"; };
+		7FCDBE6E277A9789008030C6 /* INSParseQueryManager+Reply.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "INSParseQueryManager+Reply.m"; path = "INSParse/Classes/INSParseQueryManager+Reply.m"; sourceTree = "<group>"; };
 		7FE7B12124241C9ECD038A5996BAB36F /* PFFileController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PFFileController.m; path = Parse/Parse/Internal/File/Controller/PFFileController.m; sourceTree = "<group>"; };
 		80C10FD9DFF582A57BD7F6EA381B5072 /* FBSnapshotTestCase-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FBSnapshotTestCase-umbrella.h"; sourceTree = "<group>"; };
 		815DF760F708AF5D2E44DB8857C9026B /* PFPush.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PFPush.m; path = Parse/Parse/PFPush.m; sourceTree = "<group>"; };
@@ -1603,6 +1611,8 @@
 				BB605795C762E2EAA962C76962D2B0D2 /* INSComment.m */,
 				30AB098FEA66544BD5684479C3E5607E /* INSFeed.h */,
 				3425B5370D0FC91A7B2FF03A1223CC0E /* INSFeed.m */,
+				7FCDBE69277A9228008030C6 /* INSReply.h */,
+				7FCDBE6A277A9228008030C6 /* INSReply.m */,
 				0BFDC00AC55778AAD83E84117CD81873 /* INSFollow.h */,
 				B470FF0F3EA84B1A2830A3D20084CACA /* INSFollow.m */,
 				88114874A74B3CEE584C430AAD228AC2 /* INSStatisticsInfo.h */,
@@ -1611,10 +1621,12 @@
 				29073C414E639392C3C0D4265B287966 /* INSLike.m */,
 				A5C5764047B6CECE1982502E5BB3BD22 /* INSParseQueryManager.h */,
 				81944D9D5B0A708DF5D5D4654F880277 /* INSParseQueryManager.m */,
-				7A1B60EB0C58FDD0EC3B4135021A40E0 /* INSParseQueryManager+Activity.h */,
-				EA2C168C855D8429CE63DCB96DAE0022 /* INSParseQueryManager+Activity.m */,
+				7FCDBE6D277A9789008030C6 /* INSParseQueryManager+Reply.h */,
+				7FCDBE6E277A9789008030C6 /* INSParseQueryManager+Reply.m */,
 				650B9FD4A1297809BC34BD24C0022DBA /* INSParseQueryManager+Comment.h */,
 				4E7942587E3909FBB0007EAD9D3A75A2 /* INSParseQueryManager+Comment.m */,
+				7A1B60EB0C58FDD0EC3B4135021A40E0 /* INSParseQueryManager+Activity.h */,
+				EA2C168C855D8429CE63DCB96DAE0022 /* INSParseQueryManager+Activity.m */,
 				750055308A16C4CA877575AC265609DC /* INSParseQueryManager+Feed.h */,
 				76284498716EDF849FF14F47C6469C10 /* INSParseQueryManager+Feed.m */,
 				6EC7D4E6584DBE8F91C19E0314DE3F3A /* INSParseQueryManager+Follow.h */,
@@ -2409,6 +2421,7 @@
 				5FE572D2DE80D6A43AADB24F2F5B6959 /* INSFollow.h in Headers */,
 				600F5533E4DD22ECCB6911FCC29CD3A7 /* INSStatisticsInfo.h in Headers */,
 				95B931A36B764B68AAA480C6EED05BB5 /* INSLike.h in Headers */,
+				7FCDBE6F277A9789008030C6 /* INSParseQueryManager+Reply.h in Headers */,
 				BBCAF6E63F1307F04A548A72BBDDD88C /* INSParse-umbrella.h in Headers */,
 				E0A802594474D733556A4A58036C1D56 /* INSParseQueryManager.h in Headers */,
 				DB33AF563CC2A7BF121C3312A825A7B2 /* INSParseQueryManager+Activity.h in Headers */,
@@ -2417,6 +2430,7 @@
 				2F98360F0ECEB677090749FDBA4F5249 /* INSParseQueryManager+Follow.h in Headers */,
 				7C46C14FF70A4D9CA763A9EE87E753A5 /* INSParseQueryManager+Like.h in Headers */,
 				55C3818C45CEC88F30B787A7B55DAB49 /* INSParseQueryManager+Report.h in Headers */,
+				7FCDBE6B277A9228008030C6 /* INSReply.h in Headers */,
 				6E667C74DF1A9AD46BF35CF3E34DDF67 /* INSParseQueryManager+Share.h in Headers */,
 				52348DCA46AA92C9606CFBEA55AD8226 /* INSParseQueryManager+User.h in Headers */,
 				A470A94AAC56B5137CFE52E2B7A1C6E5 /* INSParseTableDefines.h in Headers */,
@@ -3370,10 +3384,12 @@
 				8742D1EB7FEEA4BD78027D0D9730CD63 /* INSParse-dummy.m in Sources */,
 				60F4BF8DDA022351858DE12CFB57833F /* INSParseQueryManager.m in Sources */,
 				A3413FD23AE0A76299C00B5D11C96135 /* INSParseQueryManager+Activity.m in Sources */,
+				7FCDBE70277A9789008030C6 /* INSParseQueryManager+Reply.m in Sources */,
 				38079E214B4F543855D2636C9B71BAA0 /* INSParseQueryManager+Comment.m in Sources */,
 				F5BA352B21EC2D0B263FBD8411E1586A /* INSParseQueryManager+Feed.m in Sources */,
 				24E8EAC52D81107C49CF96141958622C /* INSParseQueryManager+Follow.m in Sources */,
 				1F0FEBC27A598F44B46E956B7F846E5C /* INSParseQueryManager+Like.m in Sources */,
+				7FCDBE6C277A9228008030C6 /* INSReply.m in Sources */,
 				2C60C8AC8563C2DB8C9F3D00FA71B6D8 /* INSParseQueryManager+Report.m in Sources */,
 				49A89586CEC3EA43E6CF64B5ACEF7B50 /* INSParseQueryManager+Share.m in Sources */,
 				B5F3B59F022EE48CB8A1956FCC9F04BC /* INSParseQueryManager+User.m in Sources */,

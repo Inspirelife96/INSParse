@@ -18,6 +18,7 @@
 @dynamic type;
 @dynamic feed;
 @dynamic comment;
+@dynamic reply;
 @dynamic like;
 @dynamic share;
 @dynamic follow;

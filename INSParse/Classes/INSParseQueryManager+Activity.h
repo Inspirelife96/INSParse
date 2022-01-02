@@ -9,9 +9,11 @@
 
 @class INSFeed;
 @class INSComment;
+@class INSReply;
 @class INSLike;
 @class INSShare;
 @class INSFollow;
+
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -29,6 +31,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (BOOL)addCommentActivity:(INSComment *)comment error:(NSError **)error;
 
++ (BOOL)addReplyActivity:(INSReply *)comment error:(NSError **)error;
+
 + (BOOL)addLikeActivity:(INSLike *)like error:(NSError **)error;
 
 + (BOOL)addShareActivity:(INSShare *)share error:(NSError **)error;
@@ -41,6 +45,8 @@ NS_ASSUME_NONNULL_BEGIN
 // 但是对于删除操作，例如XX用户删除了一条评论，此时Activity有两种做法，一种是删除先前添加的Activity记录，还有一种做法是插入一条删除评论的Activity记录。
 // 目前还是采用了前者。
 + (BOOL)deleteCommentActivity:(INSComment *)comment error:(NSError **)error;
+
++ (BOOL)deleteReplyActivity:(INSReply *)reply error:(NSError **)error;
 
 + (BOOL)deleteLikeActivity:(INSLike *)comment error:(NSError **)error;
 

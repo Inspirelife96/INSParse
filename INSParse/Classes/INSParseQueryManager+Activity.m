@@ -10,6 +10,7 @@
 #import "INSParseTableDefines.h"
 #import "INSFeed.h"
 #import "INSComment.h"
+#import "INSReply.h"
 #import "INSLike.h"
 #import "INSShare.h"
 #import "INSFollow.h"
@@ -58,19 +59,36 @@
     activity.type = @(INSParseActivityTypeAddComment);
     activity.comment = comment;
     activity.fromUser = comment.fromUser;
-    if (comment.toComment) {
-        [comment.toComment fetchIfNeeded:error];
+    
+    [comment.toFeed fetchIfNeeded:error];
+    if (*error) {
+        return NO;
+    } else {
+        activity.toUser = comment.toFeed.fromUser;
+    }
+    
+    return [activity save:error];
+}
+
++ (BOOL)addReplyActivity:(INSReply *)reply error:(NSError **)error {
+    INSActivity *activity = [[INSActivity alloc] init];
+    
+    activity.type = @(INSParseActivityTypeAddReply);
+    activity.reply = reply;
+    activity.fromUser = reply.fromUser;
+    if (reply.toReply) {
+        [reply.toReply fetchIfNeeded:error];
         if (*error) {
             return NO;
         } else {
-            activity.toUser = comment.toComment.fromUser;
+            activity.toUser = reply.toReply.fromUser;
         }
     } else {
-        [comment.toFeed fetchIfNeeded:error];
+        [reply.toComment fetchIfNeeded:error];
         if (*error) {
             return NO;
         } else {
-            activity.toUser = comment.toFeed.fromUser;
+            activity.toUser = reply.toComment.fromUser;
         }
     }
     
@@ -121,6 +139,10 @@
 
 + (BOOL)deleteCommentActivity:(INSComment *)comment error:(NSError **)error {
     return [INSParseQueryManager _deleteActivityWhereKey:kActivityComment equalTo:comment error:error];
+}
+
++ (BOOL)deleteReplyActivity:(INSReply *)reply error:(NSError **)error {
+    return [INSParseQueryManager _deleteActivityWhereKey:kActivityComment equalTo:reply error:error];
 }
 
 + (BOOL)deleteLikeActivity:(INSLike *)like error:(NSError **)error {

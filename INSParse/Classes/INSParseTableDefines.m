@@ -65,16 +65,36 @@ NSString *const kArticleOriginalLink = @"originalLink"; // 原始链接
 
 # pragma mark - Comment 表
 
-// 评论表 指用户针对Feed或评论发表的内容，一般是文字，不推荐再包含图片等。
+// 评论表 指用户针对Feed或评论发表的内容，一般是文字，也可再包含图片等。
 
 // Class key
 NSString *const kCommentClassKey = @"Comment";
 
 // Field keys
 NSString *const kCommentToFeed = @"toFeed";
-NSString *const kCommentToComment = @"toComment";
 NSString *const kCommentContent = @"content";
 NSString *const kCommentFromUser = @"fromUser";
+NSString *const kCommentMediaContents = @"meidaContents";
+NSString *const kCommentReples = @"replies";
+NSString *const kCommentReplyCount = @"replyCount";
+NSString *const kCommentLikeCount = @"likeCount";
+NSString *const kCommentDislikeCount = @"dislikeCount";
+
+
+# pragma mark - Reply 表
+
+// 回复表 指用户针对评论发表的内容，只能是文字。
+
+// Class key
+NSString *const kReplyClassKey = @"Reply";
+
+// Field keys
+NSString *const kReplyToComment = @"toComment";
+NSString *const kReplyToReply = @"toReply";
+NSString *const kReplyContent = @"content";
+NSString *const kReplyFromUser = @"fromUser";
+NSString *const kReplyLikeCount = @"likeCount";
+NSString *const kReplyDislikeCount = @"dislikeCount";
 
 # pragma mark - Like 表
 
@@ -136,6 +156,7 @@ NSString *const kActivityToUser = @"toUser";
 NSString *const kActivityType = @"type";
 NSString *const kActivityFeed = @"feed";
 NSString *const kActivityComment = @"comment";
+NSString *const kActivityReply = @"reply";
 NSString *const kActivityLike = @"like";
 NSString *const kActivityShare = @"share";
 NSString *const kActivityFollow = @"follow";

@@ -18,6 +18,7 @@ typedef NS_ENUM(NSInteger, INSParseActivityType) {
     INSParseActivityTypeAddLike = 200,
     INSParseActivityTypeAddShare = 300,
     INSParseActivityTypeAddFollow = 400,
+    INSParseActivityTypeAddReply = 500,
 
     INSParseActivityTypeAddFeed = 1000,
     INSParseActivityTypePublicFeed = 1001,
@@ -102,16 +103,36 @@ extern NSString *const kArticleOriginalLink; // 原始链接
 
 # pragma mark - Comment 表
 
-// 评论表 指用户针对Feed或评论发表的内容，一般是文字，不推荐再包含图片等。
+// 评论表 指用户针对Feed或评论发表的内容，一般是文字，也可再包含图片等。
 
 // Class key
 extern NSString *const kCommentClassKey;
 
 // Field keys
 extern NSString *const kCommentToFeed; // 被评论的Feed
-extern NSString *const kCommentToComment; // 被评论的Comment
 extern NSString *const kCommentContent; // 评论的内容
 extern NSString *const kCommentFromUser; // 谁评论的
+extern NSString *const kCommentMediaContents; // 图片，可多图 (NSArray<PFFile *>)
+extern NSString *const kCommentReplies; // 针对该评论的回复(NSArray<INSReply *>) 最多5条
+extern NSString *const kCommentReplyCount; // 评论的回复总数
+extern NSString *const kCommentLikeCount; // 赞的个数
+extern NSString *const kCommentDislikeCount; // 踩的个数
+
+
+# pragma mark - Reply 表
+
+// 回复表 指用户针对评论发表的内容，只能是文字。
+
+// Class key
+extern NSString *const kReplyClassKey;
+
+// Field keys
+extern NSString *const kReplyToComment; // 被回复的评论
+extern NSString *const kReplyToReply; // 回复评论时为空，回复回复时，指向回复
+extern NSString *const kReplyContent; // 回复的内容
+extern NSString *const kReplyFromUser; // 谁回复的
+extern NSString *const kReplyLikeCount; // 赞的个数
+extern NSString *const kReplyDislikeCount; // 踩的个数
 
 # pragma mark - Like 表
 
@@ -175,6 +196,7 @@ extern NSString *const kActivityToUser; // 消息接受者
 extern NSString *const kActivityType; // 类型 0:Feed私有 1:Feed公开 2:Feed删除 100:评论 200：赞 300:分享 400:关注
 extern NSString *const kActivityFeed; // 相关的Feed
 extern NSString *const kActivityComment; // 相关的Comment
+extern NSString *const kActivityReply; // 相关的Reply
 extern NSString *const kActivityLike; // 相关的Like
 extern NSString *const kActivityShare; // 相关的Share
 extern NSString *const kActivityFollow; // 相关的Share

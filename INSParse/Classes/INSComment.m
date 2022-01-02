@@ -16,9 +16,13 @@
 @dynamic category;
 
 @dynamic toFeed;
-@dynamic toComment;
 @dynamic content;
+@dynamic mediaContents;
 @dynamic fromUser;
+@dynamic replies;
+@dynamic replyCount;
+@dynamic likeCount;
+@dynamic dislikeCount;
 
 + (NSString *)parseClassName {
     return kCommentClassKey;
