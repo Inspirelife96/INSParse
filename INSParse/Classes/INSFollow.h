@@ -13,6 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, strong) PFUser *fromUser;
 @property (nonatomic, strong) PFUser *toUser;
+@property (nonatomic, assign) BOOL isDeleted;
 
 @end
 

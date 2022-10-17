@@ -7,18 +7,21 @@
 
 #import "INSStatisticsInfo.h"
 
-#import "INSParseTableDefines.h"
+#import "INSParseDefines.h"
 
 @implementation INSStatisticsInfo
 
 @dynamic user;
-@dynamic followCount;
-@dynamic followedCount;
-@dynamic feedCount;
+@dynamic profileViews;
+@dynamic reputation;
+@dynamic topicCount;
+@dynamic postCount;
+@dynamic followerCount;
+@dynamic followingCount;
 @dynamic likedCount;
 
 + (NSString *)parseClassName {
-    return kStatisticsInfoClassKey;
+    return INSStatisticsInfoKeyClass;
 }
 
 @end

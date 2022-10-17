@@ -9,7 +9,7 @@
 
 #import <Parse/PFObject+Subclass.h>
 
-#import "INSParseTableDefines.h"
+#import "INSParseDefines.h"
 
 @implementation INSBlock
 
@@ -17,7 +17,7 @@
 @dynamic toUser;
 
 + (NSString *)parseClassName {
-    return kBlockClassKey;
+    return INSBlockKeyClass;
 }
 
 @end

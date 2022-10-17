@@ -38,26 +38,62 @@
 }
 
 - (void)testCreateTable {
-//    NSError *error = nil;
-//    [INSParseQueryManager logInWithUsername:@"inspirelife" password:@"IloveMS007" error:&error];
+    NSError *error = nil;
+    //[INSParseOperationManager signUpWithUsername:@"" password:@"" email:@"inspirelife@hotmail.com" error:&error];
+    
+    [INSParseOperationManager logInWithUsername:@"inspirelife" password:@"IloveMS007" error:&error];
+    
+    XCTAssert([PFUser currentUser] != nil, @"Login Failed");
+
+    XCTAssertNil(error, @"Login Failed!");
+
+    INSTopic *topic = [INSParseOperationManager addTopicWithIsLocked:NO isDeleted:NO isPrivate:NO isApproved:YES isPopular:NO title:@"Create Topic Table" content:@"" mediaFileObjects:@[] mediaFileType:@"" fromUser:[PFUser currentUser] category:@"-1" tags:@[] error:&error];
+    
+    XCTAssertNil(error, @"Add Topic Failed!");
+    
+    INSPost *post = [INSParseOperationManager addPostWithIsApproved:YES isDeleted:NO content:@"Create Post Table" mediaFileObjects:@[] mediaFileType:@"" fromUser:[PFUser currentUser] toTopic:topic error:&error];
+    
+    XCTAssertNil(error, @"Add Post Failed!");
+    
+    INSReply *reply = [INSParseOperationManager addReplyToPost:post isApproved:YES isDeleted:NO content:@"Create Reply to Post" fromUser:[PFUser currentUser] error:&error];
+    
+    INSCategory *category = [INSParseOperationManager addCategoryWithName:@"练习" summary:@"" iconImageFileObject:nil backgroundImageFileObject:nil error:&error];
+    
+    INSBlock *block = [INSParseOperationManager addBlockFromUser:[PFUser currentUser] toUser:[PFUser currentUser] error:&error];
+    
+    INSFollow *follow = [INSParseOperationManager addFollowFromUser:[PFUser currentUser] toUser:[PFUser currentUser] error:&error];
+    
+    INSTopicLike *topicLike = [INSParseOperationManager addTopicLikeWithFromUser:[PFUser currentUser] toTopic:topic error:&error];
+    
+    INSPostLike *postLike = [INSParseOperationManager addPostLikeWithFromUser:[PFUser currentUser] toPost:post  error:&error];
+    
+    INSReplyLike *replyLike = [INSParseOperationManager addReplyLikeWithFromUser:[PFUser currentUser] toReply:reply error:&error];
+
+    INSTopicReport *topicReport = [INSParseOperationManager addTopicReportFromUser:[PFUser currentUser] toTopic:topic forReason:INSParseReportReasonIllegal error:&error];
+    
+    INSPostReport *postReport = [INSParseOperationManager addPostReportFromUser:[PFUser currentUser] toPost:post forReason:INSParseReportReasonIrrelated error:&error];
+    
+    INSReplyReport *replyReport = [INSParseOperationManager addReplyReportFromUser:[PFUser currentUser] toReply:reply forReason:INSParseReportReasonIllegal error:&error];
+    
+
+    
+//    PFQuery *query = [PFQuery queryWithClassName:INSTopicKeyClass];
+//    INSTopic *feed = [query getObjectWithId:@"E4FYzL1qML"];
 //    
-//    PFQuery *query = [PFQuery queryWithClassName:kFeedClassKey];
-//    INSFeed *feed = [query getObjectWithId:@"E4FYzL1qML"];
-//    
-//    INSComment *comment = [[INSComment alloc] init];
-//    comment.toFeed = feed;
+//    INSPost *comment = [[INSPost alloc] init];
+//    comment.toTopic = feed;
 //    comment.content = @"abc";
 //    comment.fromUser = [PFUser currentUser];
 //    [comment save];
 //    
-//    comment.toComment = comment;
+//    comment.toPost = comment;
 //    [comment save];
 //    
 //    
 //    INSLike *like = [[INSLike alloc] init];
 //    like.category = @(1);
-//    like.toFeed = feed;
-//    like.toComment = comment;
+//    like.toTopic = feed;
+//    like.toPost = comment;
 //    like.fromUser = [PFUser currentUser];
 //    [like save];
 //    
@@ -135,7 +171,7 @@
 //        }
 //
 //
-//        INSFeed *feed = [[INSFeed alloc] init];
+//        INSTopic *feed = [[INSTopic alloc] init];
 //        //feed.objectId = objectId;
 //        feed.status = @(INSParseRecordStatusPublic);
 //        feed.category = category;
@@ -156,7 +192,7 @@
 //
 //        [feed save:&error];
 //
-//        NSAssert(error == nil, @"Add Feed Failed");
+//        NSAssert(error == nil, @"Add Topic Failed");
 //    }
         
     // This is an example of a functional test case.

@@ -9,19 +9,20 @@
 
 #import <Parse/PFObject+Subclass.h>
 
-#import "INSParseTableDefines.h"
+#import "INSParseDefines.h"
 
 @implementation INSReply
 
-@dynamic toComment;
-@dynamic toReply;
+@dynamic isApproved;
+@dynamic isDeleted;
 @dynamic content;
-@dynamic fromUser;
 @dynamic likeCount;
-@dynamic dislikeCount;
+@dynamic fromUser;
+@dynamic toPost;
+@dynamic toReply;
 
 + (NSString *)parseClassName {
-    return kReplyClassKey;
+    return INSReplyKeyClass;
 }
 
 @end

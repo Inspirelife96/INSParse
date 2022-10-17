@@ -43,16 +43,16 @@
     NSString *email = [NSString stringWithFormat:@"%@@hotmail.com", username];
     NSError *error = nil;
     
-    [INSParseQueryManager signUpWithUsername:username password:password email:email error:&error];
+    [INSParseOperationManager signUpWithUsername:username password:password email:email error:&error];
     
     NSAssert([PFUser currentUser], @"Sign Up Failed");
     NSAssert(error == nil, @"Sign Up Failed");
     
-    [INSParseQueryManager logOut];
+    [INSParseOperationManager logOut];
     
     NSAssert(![PFUser currentUser], @"LogOut Failed");
     
-    [INSParseQueryManager logInWithUsername:username password:password error:&error];
+    [INSParseOperationManager logInWithUsername:username password:password error:&error];
     NSAssert([PFUser currentUser], @"Sign Up Failed");
     NSAssert(error == nil, @"Sign Up Failed");
 }
@@ -64,7 +64,7 @@
     
     NSError *error = nil;
     
-    [INSParseQueryManager logInWithAnonymous:&error];
+    [INSParseOperationManager logInWithAnonymous:&error];
     
     NSAssert([PFUser currentUser], @"Anonymous Login Failed");
 }

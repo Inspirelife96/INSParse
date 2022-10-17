@@ -9,18 +9,16 @@
 
 #import <Parse/PFObject+Subclass.h>
 
-#import "INSParseTableDefines.h"
+#import "INSParseDefines.h"
 
 @implementation INSShare
 
-@dynamic category;
-
-@dynamic feed;
-@dynamic toPlatform;
+@dynamic topic;
 @dynamic fromUser;
+@dynamic toPlatform;
 
 + (NSString *)parseClassName {
-    return kShareClassKey;
+    return INSShareKeyClass;
 }
 
 @end

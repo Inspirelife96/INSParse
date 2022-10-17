@@ -9,15 +9,16 @@
 
 #import <Parse/PFObject+Subclass.h>
 
-#import "INSParseTableDefines.h"
+#import "INSParseDefines.h"
 
 @implementation INSFollow
 
 @dynamic fromUser;
 @dynamic toUser;
+@dynamic isDeleted;
 
 + (NSString *)parseClassName {
-    return kFollowClassKey;
+    return INSFollowKeyClass;
 }
 
 @end

@@ -9,15 +9,13 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@class INSFeed;
+@class INSTopic;
 
 @interface INSShare : PFObject <PFSubclassing>
 
-@property (nonatomic, strong) NSNumber *category;
-
-@property (nonatomic, strong) INSFeed *feed;
-@property (nonatomic, copy) NSString *toPlatform;
+@property (nonatomic, strong) INSTopic *topic;
 @property (nonatomic, strong) PFUser *fromUser;
+@property (nonatomic, copy) NSString *toPlatform;
 
 @end
 

@@ -12,9 +12,26 @@ NS_ASSUME_NONNULL_BEGIN
 @interface INSStatisticsInfo : PFObject <PFSubclassing>
 
 @property (nonatomic, strong) PFUser *user;
-@property (nonatomic, strong) NSNumber *followCount;
-@property (nonatomic, strong) NSNumber *followedCount;
-@property (nonatomic, strong) NSNumber *feedCount;
+
+// 浏览次数
+@property (nonatomic, strong) NSNumber *profileViews;
+
+// 积分
+@property (nonatomic, strong) NSNumber *reputation;
+
+// 话题数
+@property (nonatomic, strong) NSNumber *topicCount;
+
+// 回复数
+@property (nonatomic, strong) NSNumber *postCount;
+
+// 粉丝数
+@property (nonatomic, strong) NSNumber *followerCount;
+
+// 关注数
+@property (nonatomic, strong) NSNumber *followingCount;
+
+// 收获的赞
 @property (nonatomic, strong) NSNumber *likedCount;
 
 @end
